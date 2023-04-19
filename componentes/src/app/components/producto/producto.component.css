@@ -1,0 +1,41 @@
+img{
+    width: 200px;
+}
+
+.stock-bajo{
+    color: red;
+}
+
+.precio-bajo{
+    color: green;
+}
+
+.precio-medio{
+    color: blue;
+}
+
+.precio-alto{
+    color: red;
+}
+
+.fuera-stock{
+    background-color: antiquewhite;
+}
+
+.categoria{
+    background-color: cornflowerblue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+div{
+
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+}

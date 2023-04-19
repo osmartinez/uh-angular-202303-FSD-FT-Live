@@ -1,0 +1,15 @@
+<div >
+    <input (blur)="pierdeFoco()" (keyup)="pulsacion($event)" type="text" placeholder="observacion">
+    <p *ngIf="producto.comprado">Vendido!</p>
+    <p>{{ producto.codigo }}</p>
+    <p>{{ producto.nombre }}</p>
+    <p [class]="producto.precio<=50?'precio-bajo':(producto.precio<=100?'precio-medio':'precio-alto')">{{ producto.precio }} €</p>
+    <p [class]="producto.stock<3? 'stock-bajo':''">Quedan {{ producto.stock }} {{producto.stock<3? '!!!': ''}} </p>
+    <img [src]="producto.img"/>
+
+    <small *ngFor="let cat of producto.categorias" class="categoria">{{cat}}</small>
+
+
+    <button (click)="comprar()">🛒</button>
+
+</div>

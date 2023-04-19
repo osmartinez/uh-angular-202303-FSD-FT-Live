@@ -1,0 +1,16 @@
+<div>
+    <fieldset>
+        <legend>
+            Datos personales
+        </legend>
+        <label>Nombre</label>
+        <input [(ngModel)]="usuario.nombre" name="nombre" type="text">
+        <br>
+        <label>Dni</label>
+        <input [(ngModel)]="usuario.dni" type="text">
+    </fieldset>
+
+    <h2>
+        Hola {{ usuario.nombre }} con dni {{usuario.dni}}
+    </h2>
+</div>

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
   mensaje:  string = "mi lista de productos"
+
+  array = ["hola","que","tal"]
 }

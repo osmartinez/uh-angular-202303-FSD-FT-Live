@@ -1,0 +1,6 @@
+<div>
+    <div *ngFor="let prod of productos; let index = index">
+        {{index}}
+        <app-producto [producto]="prod"></app-producto>
+    </div>
+</div>
