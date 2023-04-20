@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: darkred;
+    border-width: 1px;
+    background-color: red;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+div:hover{
+    background-color: darkred;
+}

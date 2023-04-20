@@ -1,0 +1,11 @@
+<div>
+    <h3>
+        Hijo: {{nombre}}
+    </h3>
+    <!-- <p>El hijo recibe @Input() 1: {{valorRecibido1}}</p>
+    <p>El hijo recibe @Input() 2: {{valorRecibido2}}</p> -->
+
+    <!-- <button (click)="pulsar()">click me!</button> -->
+    <input [(ngModel)]="mensajeParaPadre" placeholder="Escribe un msg para padre">
+    <app-mi-boton (miClick)="pulsar()" [nombreHijo]="nombre"></app-mi-boton>
+</div>
