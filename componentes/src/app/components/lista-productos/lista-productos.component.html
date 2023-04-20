@@ -1,6 +1,8 @@
 <div>
+    <h1>Has comprado {{numProductosComprados}} productos</h1>
+
     <div *ngFor="let prod of productos; let index = index">
         {{index}}
-        <app-producto [producto]="prod"></app-producto>
+        <app-producto (emitProductoComprado)="unProductoComprado($event)" [producto]="prod"></app-producto>
     </div>
 </div>

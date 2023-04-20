@@ -8,6 +8,8 @@ import { Producto } from 'src/app/interfaces/producto';
   styleUrls: ['./lista-productos.component.css']
 })
 export class ListaProductosComponent {
+  numProductosComprados: number = 0
+
   productos: Producto[] = [
     {
       codigo: "0000001",
@@ -28,4 +30,8 @@ export class ListaProductosComponent {
       categorias: ["electrodomestico","casa","ropa"]
     },
   ]
+
+  unProductoComprado(producto: Producto){
+    this.numProductosComprados++
+  }
 }

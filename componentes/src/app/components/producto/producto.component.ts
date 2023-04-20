@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Producto } from 'src/app/interfaces/producto';
 
 @Component({
@@ -11,8 +11,12 @@ export class ProductoComponent {
   @Input()
   producto!: Producto;
 
+  @Output()
+  emitProductoComprado = new EventEmitter()
+
   comprar(): void {
     this.producto.comprado = !this.producto.comprado
+    this.emitProductoComprado.emit(this.producto)
   }
 
   pulsacion(event: KeyboardEvent){
