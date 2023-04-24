@@ -1,0 +1,27 @@
+<h1>Página para crear un producto</h1>
+
+<div>
+    <div>
+        <label for="">Codigo</label>
+        <input type="text" name="codigo" [(ngModel)]="nuevoProducto.codigo">
+    </div>
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" [(ngModel)]="nuevoProducto.nombre">
+    </div>
+    <div>
+        <label for="">Imagen</label>
+        <input type="text" name="imagen" [(ngModel)]="nuevoProducto.imagen">
+    </div>
+    <div>
+        <label for="">Precio</label>
+        <input type="number" name="precio" [(ngModel)]="nuevoProducto.precio">
+    </div>
+    <div>
+        <label for="">Stock</label>
+        <input type="number" name="stock" [(ngModel)]="nuevoProducto.stock">
+    </div>
+    <div>
+        <button (click)="crear()">Crear</button>
+    </div>
+</div>
