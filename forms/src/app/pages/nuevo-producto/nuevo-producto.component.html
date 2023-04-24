@@ -1,15 +1,21 @@
 <h1>Página para crear un producto</h1>
 
-<div>
+<form novalidate (ngSubmit)="submit()"  [formGroup]="productForm">
     <div>
         <label for="">Codigo</label>
-        <input type="text" name="codigo" [(ngModel)]="nuevoProducto.codigo">
+        <input type="text" name="codigo" formControlName="codigo">
+        <div class="error" *ngIf="!productForm.get('codigo')?.valid">
+            El código no es válido
+        </div>
     </div>
     <div>
         <label for="">Nombre</label>
-        <input type="text" name="nombre" [(ngModel)]="nuevoProducto.nombre">
+        <input type="text" name="nombre" formControlName="nombre">
+        <div class="error" *ngIf="!productForm.get('nombre')?.valid">
+            El nombre no es válido
+        </div>
     </div>
-    <div>
+    <!-- <div>
         <label for="">Imagen</label>
         <input type="text" name="imagen" [(ngModel)]="nuevoProducto.imagen">
     </div>
@@ -20,8 +26,8 @@
     <div>
         <label for="">Stock</label>
         <input type="number" name="stock" [(ngModel)]="nuevoProducto.stock">
-    </div>
+    </div> -->
     <div>
-        <button (click)="crear()">Crear</button>
+        <button [disabled]="!productForm.valid" type="submit">Crear</button>
     </div>
-</div>
+</form>

@@ -16,6 +16,14 @@
       "precio": 102,
       "stock": 4,
       "id": 4
+    },
+    {
+      "nombre": "BATIDORA",
+      "codigo": "123456789",
+      "imagen": "",
+      "precio": 0,
+      "stock": 0,
+      "id": 5
     }
   ]
 }

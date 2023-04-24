@@ -7,7 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NuevoProductoComponent } from './pages/nuevo-producto/nuevo-producto.component';
 import { ListaProductosComponent } from './pages/lista-productos/lista-productos.component';
 import { ProductoComponent } from './components/producto/producto.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -22,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

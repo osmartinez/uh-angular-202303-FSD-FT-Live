@@ -20,9 +20,6 @@ export class ListaProductosComponent {
   ngOnInit(){
     this.servicio.obtenerTodos().subscribe((resultado:any)=>{
         this.productos = resultado
-        // for(const prod of resutlado){
-        //   this.productos.push(prod)
-        // }
     })
   }
 
