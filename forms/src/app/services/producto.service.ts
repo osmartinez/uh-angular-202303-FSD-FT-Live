@@ -12,5 +12,10 @@ export class ProductoService {
   crear(producto: Producto){
     return this.http.post("http://localhost:3000/productos", producto)
   }
-  
+
+  // ejercicio 1
+  // crear funcion para obtener todos los productos
+  obtenerTodos(){
+    return this.http.get("http://localhost:3000/productos")
+  }
 }
