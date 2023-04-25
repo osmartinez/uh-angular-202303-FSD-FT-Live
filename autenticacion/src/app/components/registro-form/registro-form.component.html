@@ -1,0 +1,41 @@
+
+
+<form novalidate (ngSubmit)="submit()" [formGroup]="registroForm">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" formControlName="nombre" form placeholder="escribe tu nombre">
+            <div class="error" *ngIf="!registroForm.get('nombre')?.valid">
+                *obligatorio
+            </div>
+        </div>
+        <div>
+            <label for="">Apellidos</label>
+            <input type="text" name="apellidos" formControlName="apellidos" placeholder="escribe tus apellidos">
+            <div class="error" *ngIf="!registroForm.get('apellidos')?.valid">
+                *obligatorio
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos de acceso</legend>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" formControlName="email" placeholder="escribe tu email">
+            <div class="error" *ngIf="!registroForm.get('email')?.valid">
+                El campo no es un email válido
+            </div>
+        </div>
+        <div>
+            <label for="">Contraseña</label>
+            <input type="password" name="clave" formControlName="clave" placeholder="escribe tu clave">
+            <div class="error" *ngIf="!registroForm.get('clave')?.valid">
+                La contraseña tiene que tener al menos 8 caracteres
+            </div>
+        </div>
+    </fieldset>
+
+    <button [disabled]="!registroForm.valid" type="submit">Registrar</button>
+</form>

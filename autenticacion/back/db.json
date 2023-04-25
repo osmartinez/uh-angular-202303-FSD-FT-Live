@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "email": "oscar@gmail.com",
+      "password": "$2a$10$NNNTTp0akTKvXID9.Fg9.OHff.KkJRXvR9KjSVlK4CWjf04/f/e/O",
+      "nombre": "oscar",
+      "apellidos": "martinez",
+      "id": 1
+    }
+  ]
+}
