@@ -1,0 +1,8 @@
+
+<nav>
+    <a [routerLink]="'/home'">Home</a>
+    <a *ngIf="!hayUsuario" [routerLink]="'/login'">Login</a>
+    <a *ngIf="hayUsuario" [routerLink]="'/perfil'">Area privada</a> 
+    <a *ngIf="!hayUsuario" [routerLink]="'/registro'">Registro</a>
+    <a *ngIf="hayUsuario" [routerLink]="'/logout'">Cerrar sesion</a>
+  </nav>

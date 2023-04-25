@@ -11,6 +11,8 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { RegistroFormComponent } from './components/registro-form/registro-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CerrarSesionComponent } from './pages/cerrar-sesion/cerrar-sesion.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     RegistroComponent,
     PerfilComponent,
     RegistroFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    CerrarSesionComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
