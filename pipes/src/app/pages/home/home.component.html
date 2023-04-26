@@ -1,0 +1,16 @@
+<h1>Lista de países ({{paises.length}})</h1>
+
+<input type="text" [(ngModel)]="dia">
+<button (click)="buscarMeteo()">buscar</button>
+
+<app-meteo [meteo]="meteo"></app-meteo>
+
+<div>
+    <label for="">Filtro:</label>
+    <input [(ngModel)]="filtro" type="text" placeholder="introduce un filtro">
+</div>
+
+
+<ul>
+    <li *ngFor="let pais of (paises | filtroLista: filtro)"> {{pais.code}}-{{pais.name}}  </li>
+</ul>
